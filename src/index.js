@@ -3,7 +3,6 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import registerServiceWorker from "./registerServiceWorker";
 import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
-import injectTapEventPlugin from "react-tap-event-plugin";
 import {Redirect, Route, Router} from "react-router";
 import getMuiTheme from "material-ui/styles/getMuiTheme";
 import createBrowserHistory from "history/createBrowserHistory";
@@ -17,8 +16,6 @@ const muiTheme = getMuiTheme({
         height: 50
     },
 });
-
-injectTapEventPlugin();
 
 const customHistory = createBrowserHistory();
 const Root = () => (

@@ -36,7 +36,7 @@ export default class Home extends React.Component {
                         backgroundColor="#a4c639"
                         labelColor="#ffffff"
                         label="Sign Out"
-                        onTouchTap={this.handleLogout}
+                        onClick={this.handleLogout}
                     />
                 </div>
             </div>
